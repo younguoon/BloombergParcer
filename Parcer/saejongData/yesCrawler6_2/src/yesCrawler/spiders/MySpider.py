@@ -6,8 +6,6 @@ Created on 2016. 7. 11.
 
 @author: kitri
 '''
-
-import json
 import logging
 
 from scrapy import Selector
@@ -33,7 +31,7 @@ class MySpider(Spider):
         global start_page, end_page, next_page
         #정의한 주소에서 전체 소스코드를 가져올 객체
         myselector = Selector(response)
-        logging.info(response)
+        logging.info(response) 
         
         #xpath문법을 이용해서 필요한 영역을 잘라서 contents에 저장
 #         contents = myselector.xpath('//table[35]//tr[2]//td[1]//table[1]')

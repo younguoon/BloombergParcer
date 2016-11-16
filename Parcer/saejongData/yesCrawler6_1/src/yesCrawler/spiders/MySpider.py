@@ -6,8 +6,6 @@ Created on 2016. 7. 11.
 
 @author: kitri
 '''
-
-import json
 import logging
 
 from scrapy import Selector
