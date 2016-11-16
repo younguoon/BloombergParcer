@@ -14,7 +14,6 @@ from scrapy.spiders import Spider
 
 from saejongData.yesCrawler6_2.src.yesCrawler.items import YesCrawlerItem
 
-
 start_page = 20
 end_page = 124000
 next_page= '000020'
