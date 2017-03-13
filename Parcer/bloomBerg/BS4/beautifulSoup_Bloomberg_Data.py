@@ -110,7 +110,7 @@ print 'NetChange : ', links_PreciousAndIndustrialMetals.find_all("td")[28].text.
 print 'Contract : ', links_PreciousAndIndustrialMetals.find_all("td")[29].text.strip()
 print 'Time : ', links_PreciousAndIndustrialMetals.find_all("td")[30].text.strip()    
 print ''
- 
+  
 #Agreculture
 #Corn
 print links_Agriculture.find_all("div", {"data-type":"full"})[0].text.strip()
