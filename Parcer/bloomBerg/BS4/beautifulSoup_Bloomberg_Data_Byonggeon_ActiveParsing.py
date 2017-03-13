@@ -5,7 +5,8 @@ Created on 2016. 8. 21.
 @author: Young
 '''
 # -*- coding: utf-8 -*-
-from selenium.selenium import selenium
+# from selenium.selenium import selenium
+
 '''
 Created on 2016. 8. 21.
 

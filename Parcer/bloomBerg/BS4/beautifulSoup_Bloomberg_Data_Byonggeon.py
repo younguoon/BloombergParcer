@@ -17,7 +17,7 @@ url_Currency_Krwjpy = "http://www.bloomberg.com/quote/KRWJPY:CUR"
 Currency_Krwjpy = requests.get(url_Currency_Krwjpy)
 sleep(10)
 soup_Currency_Krwjpy = BeautifulSoup(Currency_Krwjpy.content, "html.parser")    
-# links_Currency_Krwjpy_Today = soup_Currency_Krwjpy.find_all("div",{"class":"container"})[0]
+links_Currency_Krwjpy_Today = soup_Currency_Krwjpy.find_all("div",{"class":"container"})[0]
 # links_Currency_Krwjpy_Yesterday = soup_Currency_Krwjpy.find_all("text", {"class":"panel__hover-value"})[0]
 
 print soup_Currency_Krwjpy
@@ -25,7 +25,6 @@ print soup_Currency_Krwjpy
 # print '- 엔/달러 :', links_Currency_Krwjpy_Today.find_all("text",{"x":"692"})[0].text.strip(),  '(하루전)'
 # print '- 엔/달러 :', links_Currency_Krwjpy_Today.find_all("text",{"x":"669.0667"})[0].text.strip(),  '(이틀전)'
 # print '- 엔/달러 :', links_Currency_Krwjpy_Today.find_all("text",{"x":"646.1334"})[0].text.strip(),  '(삼일전)'
-
 
 
 # #Currency, DollerIndex
