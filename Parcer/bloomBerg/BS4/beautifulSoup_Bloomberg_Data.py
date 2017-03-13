@@ -9,7 +9,7 @@ import sys
 from bs4 import BeautifulSoup
 import requests
 
-
+ 
 sys.stdout = open("C:\Bloomberg_DATA.txt", "w")
 
 #Currency
