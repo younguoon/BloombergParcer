@@ -28,44 +28,44 @@ links_Currency_Asia = soup_currency_Asia.find_all("tbody")
 url_Comodities = "http://www.bloomberg.com/markets/commodities"
 Comodities = requests.get(url_Comodities)
 soup_Comodities = BeautifulSoup(Comodities.content, "html.parser") 
-links_Comodities_Energy = soup_Comodities.find_all("tbody", {"class":"data-table__body"})[1]
-links_PreciousAndIndustrialMetals = soup_Comodities.find_all("tbody", {"class":"data-table__body"})[2]
-links_Agriculture = soup_Comodities.find_all("tbody", {"class":"data-table__body"})[3]
+links_Comodities_Energy = soup_Comodities.find_all("tbody", {"class":"data-table-body"})[1]
+links_PreciousAndIndustrialMetals = soup_Comodities.find_all("tbody", {"class":"data-table-body"})[2]
+links_Agriculture = soup_Comodities.find_all("tbody", {"class":"data-table-body"})[3]
 
 
 #Currencies
 for item1 in links_Currency :
     print '유로/달러'
-    print 'Currency : ', item1.find_all("td", {"class":"data-table__row__cell"})[0].text.strip(), '(€)'
-    print 'Value :',  item1.find_all("td", {"class":"data-table__row__cell"})[1].text.strip(), '€'
-    print 'Change :',  item1.find_all("td", {"class":"data-table__row__cell"})[2].text.strip(), '€'
-    print 'netChange :',  item1.find_all("td", {"class":"data-table__row__cell"})[3].text.strip()
-    print 'Time :',  item1.find_all("td", {"class":"data-table__row__cell"})[4].text.strip()
+    print 'Currency : ', item1.find_all("td", {"class":"data-table-row-cell"})[0].text.strip(), '(€)'
+    print 'Value :',  item1.find_all("td", {"class":"data-table-row-cell"})[1].text.strip(), '€'
+    print 'Change :',  item1.find_all("td", {"class":"data-table-row-cell"})[2].text.strip(), '€'
+    print 'netChange :',  item1.find_all("td", {"class":"data-table-row-cell"})[3].text.strip()
+    print 'Time :',  item1.find_all("td", {"class":"data-table-row-cell"})[4].text.strip()
     print ''
        
     print "엔/달러"
-    print 'Currency : ', item1.find_all("td", {"class":"data-table__row__cell"})[6].text.strip(), '(¥)'
-    print 'Value :',  item1.find_all("td", {"class":"data-table__row__cell"})[7].text.strip(), '¥'
-    print 'Change :',  item1.find_all("td", {"class":"data-table__row__cell"})[8].text.strip(), '¥'
-    print 'netChange :',  item1.find_all("td", {"class":"data-table__row__cell"})[9].text.strip()
-    print 'Time :',  item1.find_all("td", {"class":"data-table__row__cell"})[10].text.strip()
+    print 'Currency : ', item1.find_all("td", {"class":"data-table-row-cell"})[6].text.strip(), '(¥)'
+    print 'Value :',  item1.find_all("td", {"class":"data-table-row-cell"})[7].text.strip(), '¥'
+    print 'Change :',  item1.find_all("td", {"class":"data-table-row-cell"})[8].text.strip(), '¥'
+    print 'netChange :',  item1.find_all("td", {"class":"data-table-row-cell"})[9].text.strip()
+    print 'Time :',  item1.find_all("td", {"class":"data-table-row-cell"})[10].text.strip()
     print ''
        
     print "원/달러"
-    print 'Currency : ', item1.find_all("td", {"class":"data-table__row__cell"})[60].text.strip(),'(₩)'
-    print 'Value :',  item1.find_all("td", {"class":"data-table__row__cell"})[61].text.strip(),'₩'
-    print 'Change :',  item1.find_all("td", {"class":"data-table__row__cell"})[62].text.strip(),'₩'
-    print 'netChange :',  item1.find_all("td", {"class":"data-table__row__cell"})[63].text.strip()
-    print 'Time :',  item1.find_all("td", {"class":"data-table__row__cell"})[64].text.strip()
+    print 'Currency : ', item1.find_all("td", {"class":"data-table-row-cell"})[60].text.strip(),'(₩)'
+    print 'Value :',  item1.find_all("td", {"class":"data-table-row-cell"})[61].text.strip(),'₩'
+    print 'Change :',  item1.find_all("td", {"class":"data-table-row-cell"})[62].text.strip(),'₩'
+    print 'netChange :',  item1.find_all("td", {"class":"data-table-row-cell"})[63].text.strip()
+    print 'Time :',  item1.find_all("td", {"class":"data-table-row-cell"})[64].text.strip()
     print ''
   
 for item2 in links_Currency_Asia :
     print "위안/달러"
-    print 'Currency : ', item2.find_all("td", {"class":"data-table__row__cell"})[78].text.strip(),'(¥)'
-    print 'Value :',  item2.find_all("td", {"class":"data-table__row__cell"})[79].text.strip(),'¥'
-    print 'Change :',  item2.find_all("td", {"class":"data-table__row__cell"})[80].text.strip(),'¥'
-    print 'netChange :',  item2.find_all("td", {"class":"data-table__row__cell"})[81].text.strip()
-    print 'Time :',  item2.find_all("td", {"class":"data-table__row__cell"})[82].text.strip()
+    print 'Currency : ', item2.find_all("td", {"class":"data-table-row-cell"})[78].text.strip(),'(¥)'
+    print 'Value :',  item2.find_all("td", {"class":"data-table-row-cell"})[79].text.strip(),'¥'
+    print 'Change :',  item2.find_all("td", {"class":"data-table-row-cell"})[80].text.strip(),'¥'
+    print 'netChange :',  item2.find_all("td", {"class":"data-table-row-cell"})[81].text.strip()
+    print 'Time :',  item2.find_all("td", {"class":"data-table-row-cell"})[82].text.strip()
     print ''
  
 
